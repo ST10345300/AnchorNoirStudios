@@ -206,39 +206,41 @@ export function About() {
       </div>
 
       {/* -------------------------------------------------- */}
-      {/* MEET THE FOUNDER */}
-      {/* -------------------------------------------------- */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#4A5BFF]/10 text-[#4A5BFF] mb-4">
-            <Sparkles size={16} />
-            <span className="text-sm">Founder</span>
-          </div>
+{/* MEET THE FOUNDER */}
+{/* -------------------------------------------------- */}
+<div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+    className="text-center mb-12"
+  >
+    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#4A5BFF]/10 text-[#4A5BFF] mb-4">
+      <Sparkles size={16} />
+      <span className="text-sm">Founder</span>
+    </div>
 
-          <h2 className="mb-4 text-white">Meet the Founder</h2>
-          <p className="text-lg text-[#A8A8A8] max-w-xl mx-auto">
-            The driving force behind Anchor Noir Studios.
-          </p>
-        </motion.div>
+    <h2 className="mb-4 text-white">Meet the Founder</h2>
+    <p className="text-lg text-[#A8A8A8] max-w-xl mx-auto">
+      The driving force behind Anchor Noir Studios.
+    </p>
+  </motion.div>
 
-        <div className="flex flex-col items-center">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl w-64 h-80 mb-6">
-            <ImageWithFallback
-              src="/src/assets/founder.jpg"
-              alt="Founder - Rubben Shisso"
-              className="w-full h-full object-cover"
-            />
-          </div>
+  <div className="flex flex-col items-center">
+    <div className="relative rounded-3xl overflow-hidden shadow-2xl w-64 h-80 mb-6">
+      <ImageWithFallback
+        src="/founder.jpg"   // ✅ FIXED PATH
+        alt="Founder - Rubben Shisso"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <h3 className="text-white text-2xl font-semibold">Rubben Shisso</h3>
-          <p className="text-[#A8A8A8]">Founder & Creative Director</p>
-        </div>
-      </div>
+    <h3 className="text-white text-2xl font-semibold">Rubben Shisso</h3>
+    <p className="text-[#A8A8A8]">Founder & Creative Director</p>
+  </div>
+</div>
+
     </motion.div>
   );
 }
