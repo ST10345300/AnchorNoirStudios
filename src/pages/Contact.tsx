@@ -15,13 +15,13 @@ export function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+27 (062) 071-0311',
+      href: 'tel:+270620710311',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'CPT, South Africa',
       href: '#',
     },
   ];
